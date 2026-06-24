@@ -1,6 +1,6 @@
-# Ur Metronome — Legal
+# Your Metronome — Legal
 
-iPhone アプリ **Ur Metronome** のプライバシーポリシーと利用規約を公開するためのリポジトリ。
+iPhone アプリ **Your Metronome** のプライバシーポリシーと利用規約を公開するためのリポジトリ。
 App Store ガイドライン 3.1.2（サブスクリプションの必須開示）に対応する。
 
 GitHub Pages で配信する静的 HTML のみを置く。
