@@ -45,60 +45,80 @@
   <p class="nav"><a href="./index.html">&larr; Home</a> &middot; <a href="./privacy-policy.html">日本語</a></p>
 
   <h1>Privacy Policy</h1>
-  <p class="effective">Effective date: August 13, 2026</p>
-
-  <p>This Privacy Policy explains how Sekisho Lock (the &ldquo;App&rdquo;) handles user information. The developer and operator of the App (&ldquo;we&rdquo;) respects users&rsquo; privacy and follows a basic policy of collecting only the minimum information necessary.</p>
-
+  <p class="effective">Effective date: October 13, 2026 (originally published: August 13, 2026)</p>
+  <p>This Privacy Policy explains how Sekisho Lock (the "App") handles user information. The developer and operator of the App ("we") respects users' privacy and follows a basic policy of collecting only the minimum information necessary.</p>
   <h2>1. Basic Policy</h2>
-  <p>The App <strong>does not collect personally identifiable information (personal information) such as your name, email address, phone number, or precise location.</strong> The App also does not perform usage analytics. The only information transmitted off your device is the purchase information required to process billing.</p>
-
+  <p>The App <strong>does not collect personally identifiable information (personal information) such as your name, email address, phone number, or precise location.</strong> There is no account registration.</p>
+  <p>The only information the App transmits off your device is the information listed in Section 2.1. All of it is sent linked to an <strong>anonymous identifier</strong> issued by our billing infrastructure provider (RevenueCat), and is not linked to personal information such as your name. <strong>The information in Section 2.1 (1) to (4) is sent even if you do not make a purchase.</strong></p>
+  <p>On the other hand, <strong>we do not transmit the content of the flashcards and decks you create, the apps you block, or how long you use apps</strong> (Section 2.2).</p>
   <h2>2. Information We Handle</h2>
-
-  <h3>2.1 Purchase Information</h3>
-  <p>To process and manage the purchase, restoration, and status of &ldquo;Sekisho Premium,&rdquo; we handle purchase transaction information (such as whether a purchase was made, the plan type, and the subscription expiration date) through Apple and our billing infrastructure provider (RevenueCat). This information is managed under an <strong>anonymous identifier</strong> that cannot identify you, and is not linked to personal information such as your name. <strong>Payment information such as credit card numbers is processed by Apple, and we do not receive it.</strong></p>
-
-  <h3>2.2 Information Stored Only on Your Device</h3>
+  <h3>2.1 Information Sent Through RevenueCat</h3>
+  <p>The App uses the services of our billing infrastructure provider, RevenueCat, Inc., to provide billing features and to improve the App. The following information is sent to RevenueCat, linked to the anonymous identifier.</p>
+  <p><strong>(1) Communication at launch</strong></p>
+  <p>When you launch the App, it communicates with RevenueCat to initialize the billing features. Through this communication, the anonymous identifier, device and OS information (such as the device model, OS version, the App's version, and language and region settings), and the IP address of the connection are sent to RevenueCat.</p>
+  <p><strong>(2) The date and time you first reached each step of using the App</strong></p>
+  <p>For each step in the flow of using the App, we send the date and time you reached it <strong>for the first time</strong>, once per step. The steps are:</p>
   <ul>
-    <li>The flashcards and decks you create, and settings such as the number of questions, are <strong>stored only in the database on your device and are never transmitted to our servers.</strong></li>
-    <li>Your selection of blocked targets and Screen Time related information are processed on your device by Apple&rsquo;s framework. <strong>We never obtain information such as which apps you block or which apps you use and when.</strong></li>
+    <li>First launch (together with whether you were already using the App before this measurement was introduced)</li>
+    <li>Completing the initial introduction (onboarding)</li>
+    <li>Screen Time permission (we distinguish between granting and not granting it)</li>
+    <li>Saving blocked targets for the first time</li>
+    <li>Permission for the notification that guides you to the checkpoint (we distinguish between first confirming that it is allowed and first confirming that it is not allowed [denied])</li>
+    <li>Creating a deck for the first time</li>
+    <li>The flashcards in the deck used for questions reaching the number needed for the checkpoint to work (two cards with different backs)</li>
+    <li>Pressing the "問題を解く" (Solve questions) button on the block screen (the date and time of the press as first read by the App. Presses on the block screen are recorded on your device by overwriting the previous record each time, so the date and time we send is not necessarily that of your first press, but that of one of the presses since then)</li>
+    <li>Tapping the notification that guides you to the checkpoint for the first time</li>
+    <li>Opening the checkpoint's question screen for the first time, and passing the checkpoint for the first time (for each, both a record that distinguishes the route [from the notification / from "関所を開く" (Open checkpoint) on the home screen] and a record regardless of the route)</li>
+    <li>Reaching a limit of the free plan for the first time (together with the type of feature where you first reached it, for example, "adding a second app" or "creating a second deck"), and, for each type of feature, reaching the limit with that feature for the first time</li>
+    <li>Displaying the purchase screen for the first time</li>
+  </ul>
+  <p>Only the name of the step, the date and time, and values from a predefined set of types are sent. We do not send later occurrences, counts, or durations (with two exceptions: the date and time of pressing "問題を解く" (Solve questions) described above may be that of a press later than the first one, and the type of distribution environment described below is sent each time you launch the App).</p>
+  <p>In addition, to distinguish the App from the developer's test distributions (such as TestFlight), we send the <strong>type of distribution environment</strong> of the App (either "App Store" or "test environment", determined from information about the App on your device [the name of the location where the App Store purchase record is stored]; no communication is made for this determination). We send the type and the date and time when it was first determined, once, and the type at that time each time you launch the App. If it cannot be determined, nothing is sent.</p>
+  <p><strong>(3) Displays of the purchase screen</strong></p>
+  <p>Each time the purchase screen (the Sekisho Premium screen) is displayed, the display is recorded with RevenueCat.</p>
+  <p><strong>(4) Information about installs from ads (Apple Search Ads)</strong></p>
+  <p>To understand whether the App was installed through Apple's ads (Apple Search Ads), we send to RevenueCat the attribution token (AdServices) that Apple issues on your device. RevenueCat uses this token to obtain from Apple information about the ad that led to the install, such as the campaign, ad group, and search keyword. This mechanism does not use the Advertising Identifier (IDFA), and does not ask for tracking permission (App Tracking Transparency). For installs that did not come from an ad, no ad information is obtained.</p>
+  <p><strong>(5) Purchase information and information at the time of purchase</strong></p>
+  <p>To process and manage the purchase, restoration, and status of "Sekisho Premium," we handle purchase transaction information (such as whether a purchase was made, the plan type, and the subscription expiration date) through Apple and RevenueCat. <strong>Payment information such as credit card numbers is processed by Apple, and we do not receive it.</strong></p>
+  <p>In addition, when a purchase is completed, we send the type of feature from which you opened the purchase screen (for example, "adding a second app" or "importing a deck from text"), the date and time of the purchase, and the version of the App at that time. For purchases that require a parent's approval ("Ask to Buy"), this is sent when the approval is confirmed, together with the date and time the approval was requested.</p>
+  <h3>2.2 Information Stored Only on Your Device (Information We Do Not Transmit)</h3>
+  <ul>
+    <li>The flashcards and decks you create (fronts, backs, and deck names), and settings such as the number of questions, are <strong>stored only in the database on your device and are never transmitted to us or to RevenueCat.</strong> Your answers and the number of correct answers at the checkpoint are not transmitted either.</li>
+    <li>Your selection of blocked targets and Screen Time related information are processed on your device by Apple's framework. <strong>We never obtain information such as which apps you block, or which apps you use, when, or for how long.</strong></li>
+    <li>The record of "whether each step has been reached" in Section 2.1 (2) is also stored on your device to avoid sending it twice, but it is not displayed on screen.</li>
     <li>The App only sends local notifications that are generated and delivered entirely on your device; it does not use push notifications that pass through external servers.</li>
   </ul>
-
   <h2>3. Purposes of Use</h2>
   <p>We use the information we handle only for the following purposes:</p>
   <ul>
-    <li>Providing the App&rsquo;s features, improving quality and convenience, and identifying issues</li>
-    <li>Providing and managing &ldquo;Sekisho Premium&rdquo; (purchase, renewal, restoration)</li>
+    <li>Providing and managing "Sekisho Premium" (purchase, renewal, restoration)</li>
+    <li>Improving the App</li>
+    <li>Understanding whether the Apple Search Ads ads we run led to installs, use, or purchases</li>
+    <li>Identifying issues</li>
   </ul>
-
+  <p>We do not use this information to show ads directed at you or to evaluate you.</p>
   <h2>4. Provision to Third Parties and Service Providers</h2>
-  <p>We do not sell or provide the information we handle to third parties without the user&rsquo;s consent. However, to the extent necessary to operate the App, we use the following service providers:</p>
+  <p>We do not sell or provide the information we handle to third parties without the user's consent. However, to the extent necessary to operate the App, we use the following service providers:</p>
   <table>
     <thead>
       <tr><th>Provider</th><th>Purpose</th><th>Information handled</th></tr>
     </thead>
     <tbody>
-      <tr><td>Apple Inc.</td><td>App distribution and payment processing</td><td>Purchase and payment information</td></tr>
-      <tr><td>RevenueCat, Inc.</td><td>Purchase status management (subscriptions and the lifetime plan)</td><td>Purchase status linked to an anonymous ID</td></tr>
+      <tr><td>Apple Inc.</td><td>App distribution and payment processing; providing attribution information for installs from ads</td><td>Purchase and payment information; ad attribution information (Section 2.1 (4))</td></tr>
+      <tr><td>RevenueCat, Inc.</td><td>Purchase status management (subscriptions and the lifetime plan); recording the steps of use, displays of the purchase screen, and information at the time of purchase; obtaining ad attribution information</td><td>The information in Section 2.1 (1) to (5), linked to an anonymous ID</td></tr>
     </tbody>
   </table>
-  <p>Please refer to each provider&rsquo;s official website for their respective privacy policies.</p>
-
+  <p>Please refer to each provider's official website for their respective privacy policies.</p>
   <h2>5. Tracking</h2>
-  <p>We do not use the Advertising Identifier (IDFA), and we <strong>do not track you across other companies&rsquo; apps or websites</strong>. We do not use the information we handle for advertising, and we do not share it with data brokers. If you have any question or request regarding your privacy, please contact us using the form in Section 10.</p>
-
+  <p>We do not use the Advertising Identifier (IDFA), and we <strong>do not track you across other companies' apps or websites</strong>. We use the ad attribution information in Section 2.1 (4) only to understand the effectiveness of the ads we run. We do not use the information we handle to show ads directed at you, and we do not share it with data brokers. If you have any question or request regarding your privacy, please contact us using the form in Section 10.</p>
   <h2>6. Data Storage Location</h2>
-  <p>The purchase status linked to an anonymous ID is stored on our service provider&rsquo;s (RevenueCat, Inc.) servers located in the <strong>United States</strong>.</p>
-
-  <h2>7. Children&rsquo;s Privacy</h2>
-  <p>The App is intended for a wide range of users including students, and does not collect personal information from users of any age.</p>
-
+  <p>The information in Section 2.1 is stored on our service provider's (RevenueCat, Inc.) servers located in the <strong>United States</strong>.</p>
+  <h2>7. Children's Privacy</h2>
+  <p>The App is intended for a wide range of users including students, and does not collect personal information from users of any age. The information in Section 2.1 is also handled linked to an anonymous identifier regardless of age.</p>
   <h2>8. Security</h2>
   <p>We and our service providers take reasonable security measures to prevent the leakage, loss, or alteration of the information we handle.</p>
-
   <h2>9. Changes to This Policy</h2>
   <p>We may revise this Policy as necessary. If there are significant changes, we will update the effective date on this page to notify you.</p>
-
   <h2>10. Contact</h2>
   <p>For inquiries or feedback regarding this Policy, please contact us via the form below (no Google account login is required).</p>
   <ul>
