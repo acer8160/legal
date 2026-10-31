@@ -7,6 +7,7 @@ GitHub Pages で配信する静的 HTML のみを置く。
 
 - **Your Metronome**: ルート直下（歴史的経緯。移動・リネーム禁止 — 公開済みアプリが URL を直接参照している）
 - **関所ロック（Sekisho Lock）**: `sekisho-lock/` 配下
+- **Say It In Japan**: `say-it-in-japan/` 配下（待機リストページのポリシーのみ）
 
 ## ページ（Your Metronome）
 
@@ -30,6 +31,16 @@ GitHub Pages で配信する静的 HTML のみを置く。
 
 - 連絡先は Google フォーム（日英共通・ログイン不要）。メールアドレスは公開しない。
 - 原本 Markdown はアプリ本体リポジトリ（App_lock）の `docs/legal/` に置く運用（内容変更時は原本と HTML の両方を更新する）。
+
+## ページ（Say It In Japan / 待機リスト）
+
+| ファイル | 公開 URL |
+|---|---|
+| `say-it-in-japan/waitlist-privacy-policy.html`（日本語） | `https://acer8160.github.io/legal/say-it-in-japan/waitlist-privacy-policy.html` |
+| `say-it-in-japan/waitlist-privacy-policy.en.html`（English） | `https://acer8160.github.io/legal/say-it-in-japan/waitlist-privacy-policy.en.html` |
+
+- LP（待機リストページ）専用。アプリ本体の規約・ポリシーはリリース時に別途追加する。
+- 原本 Markdown は japan_travel_phrases リポジトリの `docs/legal/privacy-policy-lp.{ja,en}.md`。
 
 ## 編集ルール
 
